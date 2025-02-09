@@ -36,7 +36,6 @@ export default [
       // Özgün ayarlar
       semi: ["warn", "always"],
       quotes: ["warn", "double"],
-      "arrow-body-style": ["error", "as-needed"],
     },
   },
 ];

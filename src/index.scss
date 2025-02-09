@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+// Mixin for fluid typography
+@mixin fluid-type($min-size, $max-size, $min-width: 320px, $max-width: 1200px) {
+  font-size: clamp(
+    $min-size,
+    calc(
+      #{$min-size} + (#{strip-unit($max-size)} - #{strip-unit($min-size)}) * ((
+              100vw - #{$min-width}
+            ) / (#{strip-unit($max-width)} - #{strip-unit($min-width)}))
+    ),
+    $max-size
+  );
+}
+
+// Usage example
+h1 {
+  @include fluid-type(1.5rem, 3rem); // Scales between 24px and 48px
+}
+
+h2 {
+  @include fluid-type(1.25rem, 2.25rem); // Scales between 20px and 36px
+}
+
+h3 {
+  @include fluid-type(1.125rem, 1.75rem); // Scales between 18px and 28px
+}
+
+p {
+  @include fluid-type(1rem, 1.5rem); // Scales between 16px and 24px
+}
+
+span {
+  @include fluid-type(0.875rem, 1.25rem); // Scales between 14px and 20px
+}
