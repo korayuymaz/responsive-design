@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useFetch } from "../../hooks/useFetch";
 import { lazy, Suspense } from "react";
+import "./style.scss";
 
 const PokeCard = lazy(() => import("./card"));
 

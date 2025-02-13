@@ -49,3 +49,39 @@ p {
 span {
   @include fluid-type(0.875rem, 1.25rem); // Scales between 14px and 20px
 }
+
+.poison {
+  background-color: #b97fc9;
+}
+
+.fire {
+  background-color: #fd7d24;
+}
+
+.grass {
+  background-color: #9bcc50;
+}
+
+.flying {
+  background-color: #3dc7ef;
+}
+
+.water {
+  background-color: #4592c4;
+}
+
+.bug {
+  background-color: #729f3f;
+}
+
+.normal {
+  background-color: #a8a77a;
+}
+
+.electric {
+  background-color: #eed535;
+}
+
+.ground {
+  background-color: #ab9842;
+}
