@@ -1,5 +1,5 @@
+import Divider from "../../component/divider";
 import Pokemon from "../../component/pokemon";
-import "./style.scss";
 
 const Grid = () => {
   return (
@@ -20,9 +20,10 @@ const Grid = () => {
           <code>{`<div style={{ display: 'grid' }}>...</div>`}</code>
         </pre>
       </div>
+      <Divider />
       <div>
         <h2>Pokemon Grid</h2>
-        <Pokemon displayType={"grid"}/>
+        <Pokemon displayType={"grid"} />
       </div>
     </div>
   );

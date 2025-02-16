@@ -6,7 +6,9 @@ const Header = () => {
     <nav className="header">
       <NavLink
         to="/"
-        className={({ isActive }) => (isActive ? "active" : "header__link")}
+        className={({ isActive }) =>
+          isActive ? "header__link--active" : "header__link"
+        }
       >
         Home
       </NavLink>

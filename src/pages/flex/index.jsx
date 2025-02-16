@@ -1,3 +1,4 @@
+import Divider from "../../component/divider";
 import Pokemon from "../../component/pokemon";
 
 const Flex = () => {
@@ -18,7 +19,9 @@ const Flex = () => {
           <code>{`<div style={{ display: 'flex' }}>...</div>`}</code>
         </pre>
       </div>
+      <Divider />
       <div>
+        <h2>Pokemon Flex</h2>
         <Pokemon displayType={"flex"} />
       </div>
     </div>
