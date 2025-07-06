@@ -1,41 +1,53 @@
 # 📱 Responsive Design Examples
 
-This repository contains a collection of responsive design exercises and templates using **HTML**, **CSS**, and optionally **JavaScript**. The goal is to practice and demonstrate various layout techniques that adapt to different screen sizes.
+This repository contains a collection of responsive design templates using **HTML**, **CSS**, and **JavaScript**, bundled and served via **Vite**. The project is structured to demonstrate responsive layouts using modern CSS techniques.
 
 ---
 
 ## 🎯 Purpose
 
-- Practice media queries and fluid layouts
-- Explore modern CSS layout systems (Flexbox, Grid)
-- Improve mobile-first design skills
-- Create reusable, accessible UI blocks
+- Practice media queries and fluid layouts  
+- Explore Flexbox and Grid systems  
+- Improve mobile-first design skills  
+- Build reusable, accessible layout structures
 
 ---
 
-## 📁 Structure
+## 📁 Folder Structure
 
-Each folder represents a standalone example or exercise:
-
-| Folder | Description |
-|--------|-------------|
-| `01-flexbox-layout` | A basic responsive layout using Flexbox |
-| `02-grid-dashboard` | A dashboard UI with CSS Grid |
-| `03-navbar` | A mobile-first responsive navbar |
-| `...` | More examples coming soon |
+```
+responsive-design/
+├── public/                # Static assets
+├── src/
+│   ├── components/        # Reusable components (e.g., navbar, cards)
+│   ├── layouts/           # Layout demos (e.g., grid, flex)
+│   ├── pages/             # Page views to showcase responsive designs
+│   ├── styles/            # Global and component-specific styles
+│   └── main.js            # Entry point
+├── index.html             # Main HTML file
+├── vite.config.js         # Vite configuration
+├── package.json
+└── README.md
+```
 
 ---
 
 ## 🧪 How to Run
 
-You can open any HTML file directly in your browser:
+Clone the repository and start the development server:
 
 ```bash
-cd responsive-design/01-flexbox-layout
-open index.html  # or just double-click in file explorer
+git clone https://github.com/korayuymaz/responsive-design.git
+cd responsive-design
+npm install
+npm run dev
 ```
 
-Alternatively, use a local development server (like Live Server extension in VSCode) for better experience.
+Then open your browser and go to:
+
+```
+http://localhost:3000
+```
 
 ---
 
@@ -43,7 +55,8 @@ Alternatively, use a local development server (like Live Server extension in VSC
 
 - HTML5  
 - CSS3 (Flexbox, Grid, Media Queries)  
-- Vanilla JavaScript (optional, minimal)
+- JavaScript (ES6)  
+- Vite (Fast development server)
 
 ---
 
